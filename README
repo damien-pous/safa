@@ -1,0 +1,48 @@
+
+	   SAFA: Symbolic Algorithms for Finite Automata
+			  =============
+
+ 			   Damien Pous
+	       CNRS - LIP, ENS Lyon (UMR 5668), France
+
+This library is distributed under the terms of the GNU Lesser General
+Public License version 3. See files LICENSE and COPYING.
+
+Webpage of the project: http://perso.ens-lyon.fr/damien.pous/symbolickat
+
+
+This OCaml library contains symbolic algorithms for checking language
+equivalence or inclusion of automata with a large alphabet, using
+symbolic representations (BDDs).
+
+It is described in the following paper, in Proc. POPL'15
+http://doi.acm.org/10.1145/2676726.2677007
+https://hal.archives-ouvertes.fr/hal-01021497v2/document
+
+This library can be used to obtain symbolic algorithms for Kleene
+algebra with tests (KAT), see library [symkat]
+
+Compile the library by typing [make]
+
+Here is a succinct description of each module:
+
+sets 	  	   : sets of integers
+hashcons	   : J.C. Filliâtre's hash-consing library
+hset		   : J.C. Filliâtre's sets of hash-consed values
+hmap		   : J.C. Filliâtre's maps indexed by hash-consed values
+common		   : common definitions and utilities
+queues		   : various queues (fifo, lifo, random)
+stats		   : simple statistics collector
+trace		   : recording traces of executions
+
+bdd		   : (multi-terminal) binary decision diagrams
+
+automata	   : types for the various kind of manipulated automata
+
+determinisation	   : symbolic determinisation
+epsilon		   : symbolic removal of epsilon-transitions
+
+congruence	   : congruence closure algorithm
+antichain	   : an antichain data-structure
+
+safa		   : symbolic algorithms for language equivalence

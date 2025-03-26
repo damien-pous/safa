@@ -1,0 +1,41 @@
+version 1.5 (2016 june 21)
+- [Common.Set.to/of_list] 
+- [Bdd.iter] function
+- antichain-based algorithm in [Safa]
+- exported (private) type of [Bdd.node]
+
+version 1.4 (2016 february 1)
+- allow for custom output checks in equivalence algorithms
+- added various Common.Set functions
+- added cardinal function to Sets.T
+- bug-fix in [Automata.SNFA.size]
+- exported memoisation functions in Common
+- new [Bdd.partial_apply] function
+- [Stats.print] now sorts the entries
+
+version 1.3 (2014 November 25)
+- library split into
+  . SAFA (Symbolic Algorithms for Finite Automata)
+  . SymbolicKAT (Symbolic Algorithms for KAT, depends on SAFA)
+- more polymorphism for BDDs and automata: the [key] and [var]
+  types are no longer fixed
+- cleaner and more complete interface to BDDs
+- standalone size function on DFA
+
+
+* in the versions below SAFA and SymbolicKAT were a single
+  library called "symbolic_kat"
+
+version 1.2 (2014 October 21)
+- elimination of KAT hypotheses
+- up to congruence version of the algorithms
+- hashconsed symbolic KAT expressions (more efficient for Antimirov, but 
+  much more memory demanding for Brzozowski)
+- automata rendering in DOT format
+
+version 1.1 (2014 October 7)
+- nicer command line
+- fixes about Gc management
+
+version 1.0 (2014 July 11)
+- first public release

@@ -1,0 +1,6 @@
+name = "safa"
+description = "Symbolic Algorithms for Finite Automata"
+requires = ""
+version = "1.4"
+archive(byte) = "safa.cma"
+archive(native) = "safa.cmxa"
